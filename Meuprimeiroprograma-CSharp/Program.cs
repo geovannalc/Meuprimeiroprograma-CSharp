@@ -1,15 +1,29 @@
-﻿const string textoolamundo = "Olá mundo, meu primeiro programa c#! Feito por ";
-string nomecompleto;
-int idade;
+﻿string nomejogador;
 
-Console.WriteLine("Qual o seu nome completo?");
+Console.WriteLine("Bem-vindos ao torneio de Poker Devaria!");
 
-nomecompleto = Console.ReadLine().ToString();
+Console.WriteLine("Qual o nome do jogador?");
 
-Console.WriteLine("Qual a sua idade?");
+nomejogador = Console.ReadLine().ToString();
 
-idade = Convert.ToInt32(Console.ReadLine());
+switch (nomejogador)
+{
+    case "Daniel":
+    case "Rafael":
+    case "Adriano":
+    case "Douglas":
+    case "Victor":
+    case "Kaique":
+    case "Fulano":
+    case "Siclano":
+        Console.WriteLine("Jogador autorizado para o torneio de Poker");
+        break;
+    default: 
+        Console.WriteLine("Jogador não autorizado");
+        break ;
+}
 
-Console.WriteLine(textoolamundo + nomecompleto + " que tem " + idade + " anos ");
+    
 
+    
 
