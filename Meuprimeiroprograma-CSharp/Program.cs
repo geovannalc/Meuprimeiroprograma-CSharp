@@ -11,3 +11,5 @@ Console.WriteLine("Qual a sua idade?");
 idade = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine(textoolamundo + nomecompleto + " que tem " + idade + " anos ");
+
+
